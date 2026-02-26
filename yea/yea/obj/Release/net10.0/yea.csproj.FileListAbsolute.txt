@@ -1,0 +1,15 @@
+C:\Users\JB\Documents\GitHub\Text-Based-Adv\yea\yea\bin\Release\net10.0\yea.exe
+C:\Users\JB\Documents\GitHub\Text-Based-Adv\yea\yea\bin\Release\net10.0\yea.deps.json
+C:\Users\JB\Documents\GitHub\Text-Based-Adv\yea\yea\bin\Release\net10.0\yea.runtimeconfig.json
+C:\Users\JB\Documents\GitHub\Text-Based-Adv\yea\yea\bin\Release\net10.0\yea.dll
+C:\Users\JB\Documents\GitHub\Text-Based-Adv\yea\yea\bin\Release\net10.0\yea.pdb
+C:\Users\JB\Documents\GitHub\Text-Based-Adv\yea\yea\obj\Release\net10.0\yea.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JB\Documents\GitHub\Text-Based-Adv\yea\yea\obj\Release\net10.0\yea.AssemblyInfoInputs.cache
+C:\Users\JB\Documents\GitHub\Text-Based-Adv\yea\yea\obj\Release\net10.0\yea.AssemblyInfo.cs
+C:\Users\JB\Documents\GitHub\Text-Based-Adv\yea\yea\obj\Release\net10.0\yea.csproj.CoreCompileInputs.cache
+C:\Users\JB\Documents\GitHub\Text-Based-Adv\yea\yea\obj\Release\net10.0\yea.sourcelink.json
+C:\Users\JB\Documents\GitHub\Text-Based-Adv\yea\yea\obj\Release\net10.0\yea.dll
+C:\Users\JB\Documents\GitHub\Text-Based-Adv\yea\yea\obj\Release\net10.0\refint\yea.dll
+C:\Users\JB\Documents\GitHub\Text-Based-Adv\yea\yea\obj\Release\net10.0\yea.pdb
+C:\Users\JB\Documents\GitHub\Text-Based-Adv\yea\yea\obj\Release\net10.0\yea.genruntimeconfig.cache
+C:\Users\JB\Documents\GitHub\Text-Based-Adv\yea\yea\obj\Release\net10.0\ref\yea.dll
