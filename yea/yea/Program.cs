@@ -248,7 +248,7 @@ namespace yea
                     Console.WriteLine(" Chill Dude: Yo where you been?");
                     Console.WriteLine(" You: Idk where anything is...");
                     Console.WriteLine(" Chill Dude: HASGDHHSAAGHS quit joking around bro");
-                    Console.WriteLine(" Chill Dude: u trynna hop on later tho?");
+                    Console.WriteLine(" Chill Dude: You trynna hop on later though?");
                     Console.WriteLine("What is bro on about");
                     Console.WriteLine("=====================================");
                     Console.WriteLine("||  () Go back                     ||");
@@ -260,7 +260,7 @@ namespace yea
                     Console.WriteLine("There seemed to be an approachable person nearby");
                     Console.WriteLine(" Approachable person: Hey man, you want some bbq?");
                     Console.WriteLine(" You: Nah I'm good thanks");
-                    Console.WriteLine(" Approachable person: Aight just say if u want anything");
+                    Console.WriteLine(" Approachable person: Alright just say if you want anything");
                     Console.WriteLine("=====================================");
                     Console.WriteLine("||  () Go back                     ||");
                     Console.WriteLine("=====================================");
