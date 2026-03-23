@@ -277,9 +277,9 @@ namespace yea
             Console.WriteLine("You went to the Canyon");
             Console.WriteLine("It was completely empty but unlike the mountain you felt a sense of unease");
             Console.WriteLine("In here you were forced to reflect onto yourself");
-            Console.WriteLine("========================================================");
-            Console.WriteLine("||   (A) Past   (B) Present   (C) Future   (D) Town   ||");
-            Console.WriteLine("========================================================");
+            Console.WriteLine("==============================================");
+            Console.WriteLine("||   (A) Physical   (B) Sexual   (C) Town   ||");
+            Console.WriteLine("==============================================");
             CanyonCheck = true;
             TownState = "Canyon";
             string inputCanyon = Console.ReadLine();
@@ -294,9 +294,9 @@ namespace yea
             {
                     case ('a'):
                         Console.Clear();
-                        Console.WriteLine("Looking into your past");
-                        Console.WriteLine("Although not the kindest you appreciate it nonetheless");
-                        Console.WriteLine("All the struggles you've endured are not for naught");
+                        Console.WriteLine("Looking unto yourself");
+                        Console.WriteLine("You feel insecure about your body. Arms too thin and a lanky figure");
+                        Console.WriteLine("But you learned to accept those parts of your body and try to improve on what you can");
                         Console.WriteLine("=====================================");
                         Console.WriteLine("||  () Go back                     ||");
                         Console.WriteLine("=====================================");
@@ -304,26 +304,15 @@ namespace yea
                         goto Canyon;
                     case ('b'):
                         Console.Clear();
-                        Console.WriteLine("In the present time");
-                        Console.WriteLine("Life has been better towards you, enduring countless struggles made you more determined");
-                        Console.WriteLine("Although hints of stagnancy and complacency still exists");
+                        Console.WriteLine("Sexuality although not something you generally talk about, you still think of from time to time");
+                        Console.WriteLine("Wanting a wife but not too ready for the responsibility or being awkward around the opposite gender");
+                        Console.WriteLine("Struggles that you acknowledge and wish to grow from");
                         Console.WriteLine("=====================================");
                         Console.WriteLine("||  () Go back                     ||");
                         Console.WriteLine("=====================================");
                         Console.ReadKey();
                         goto Canyon;
                     case ('c'):
-                        Console.Clear();
-                        Console.WriteLine("Hopes for the future");
-                        Console.WriteLine("You wish for a kinder future, where all your hardwork has paid off");
-                        Console.WriteLine("Will I be happy? Will I be able to achieve my dreams?");
-                        Console.WriteLine("Only time will tell");
-                        Console.WriteLine("=====================================");
-                        Console.WriteLine("||  () Go back                     ||");
-                        Console.WriteLine("=====================================");
-                        Console.ReadKey();
-                        goto Canyon;
-                    case ('d'):
                         goto Town;
                     default:
                         goto Canyon;
