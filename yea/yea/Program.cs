@@ -11,6 +11,7 @@ namespace yea
             bool MountainCheck = false;
             bool OceanCheck = false;
             bool CanyonCheck = false;
+            bool ForestCheck = false;
 
             string TownState = "Neutral";
 
@@ -51,8 +52,15 @@ namespace yea
                 Console.WriteLine("You reflected inwards and looked at everything at a top-down point of view");
                 Console.WriteLine("It fills you anxiety but strangely also excitement");
             }
+            else if (TownState == "Forest")
+            {
+                Console.Clear();
+                Console.WriteLine("You went back to the town reflecting on every other aspect of you");
+                Console.WriteLine("The clarity you felt seemed different than before");
+                Console.WriteLine("It feels like you understood yourself way more");
+            }
 
-                if (SwampCheck && MountainCheck && OceanCheck && CanyonCheck)
+            if (SwampCheck && MountainCheck && OceanCheck && CanyonCheck && ForestCheck)
                 {
                     Console.Clear();
                     Console.WriteLine("You ventured through swamp, mountain, ocean and canyon");
@@ -65,9 +73,9 @@ namespace yea
                     goto Clocktower;
                 }
 
-            Console.WriteLine("===========================================================");
-            Console.WriteLine("||   (A) SWAMP   (B) MOUNTAIN   (C) OCEAN   (D) CANYON   ||");
-            Console.WriteLine("===========================================================");
+            Console.WriteLine("========================================================================");
+            Console.WriteLine("||   (A) SWAMP   (B) MOUNTAIN   (C) OCEAN   (D) CANYON   (E) FOREST   ||");
+            Console.WriteLine("========================================================================");
             string inputTown = Console.ReadLine();
             string inputT = inputTown.ToLower();
 
@@ -87,6 +95,8 @@ namespace yea
                     goto Ocean;
                 case ('d'):
                     goto Canyon;
+                case ('e'):
+                    goto Forest;
                 default:
                     goto Town;
 
@@ -277,9 +287,9 @@ namespace yea
             Console.WriteLine("You went to the Canyon");
             Console.WriteLine("It was completely empty but unlike the mountain you felt a sense of unease");
             Console.WriteLine("In here you were forced to reflect onto yourself");
-            Console.WriteLine("==============================================");
-            Console.WriteLine("||   (A) Physical   (B) Sexual   (C) Town   ||");
-            Console.WriteLine("==============================================");
+            Console.WriteLine("==============================================================");
+            Console.WriteLine("||   (A) Physical   (B) Sexual   (C) Spiritual   (D) Town   ||");
+            Console.WriteLine("==============================================================");
             CanyonCheck = true;
             TownState = "Canyon";
             string inputCanyon = Console.ReadLine();
@@ -294,9 +304,10 @@ namespace yea
             {
                     case ('a'):
                         Console.Clear();
-                        Console.WriteLine("Looking unto yourself");
-                        Console.WriteLine("You feel insecure about your body. Arms too thin and a lanky figure");
-                        Console.WriteLine("But you learned to accept those parts of your body and try to improve on what you can");
+                        Console.WriteLine("Looking directly unto yourself, you look at your body");
+                        Console.WriteLine("Thin arms and a lanky figure, these are parts of you that have been teased for as long as you can remember");
+                        Console.WriteLine("A sense of insecurity looms towards your mind but you quickly shut it down");
+                        Console.WriteLine("This is who you are and you are proud of it");
                         Console.WriteLine("=====================================");
                         Console.WriteLine("||  () Go back                     ||");
                         Console.WriteLine("=====================================");
@@ -304,21 +315,92 @@ namespace yea
                         goto Canyon;
                     case ('b'):
                         Console.Clear();
-                        Console.WriteLine("Sexuality although not something you generally talk about, you still think of from time to time");
-                        Console.WriteLine("Wanting a wife but not too ready for the responsibility or being awkward around the opposite gender");
-                        Console.WriteLine("Struggles that you acknowledge and wish to grow from");
+                        Console.WriteLine("Sexuality comes up from your mind, not something that you think about greatly but are still aware of");
+                        Console.WriteLine("Thinking about it more, you realize how diverse the sexuality of the people around you have been for the past years");
+                        Console.WriteLine("Looking at yourself, being basic seems to fit you the best in terms of sexuality");
+                        Console.WriteLine("Wishing for an intimate, passionate and committed monogamous relationship from the opposite sex, a goal for the future");
                         Console.WriteLine("=====================================");
                         Console.WriteLine("||  () Go back                     ||");
                         Console.WriteLine("=====================================");
                         Console.ReadKey();
                         goto Canyon;
                     case ('c'):
+                        Console.Clear();
+                        Console.WriteLine("Spirituality, a topic that comes up way too often for you");
+                        Console.WriteLine("Living with a religious family and culture, you grew up adopting most of their traditions and beliefs");
+                        Console.WriteLine("Starting to question them from a very young age, you realize that being religious is not a good fit for you");
+                        Console.WriteLine("Now you have firm beliefs while still respecting other peoples beliefs");
+                        Console.WriteLine("=====================================");
+                        Console.WriteLine("||  () Go back                     ||");
+                        Console.WriteLine("=====================================");
+                        Console.ReadKey();
+                        goto Canyon;
+                    case ('d'):
                         goto Town;
                     default:
                         goto Canyon;
 
             }
-            Clocktower:
+        Forest:
+            Console.Clear();
+            Console.WriteLine("You went to the Forest");
+            Console.WriteLine("When your journey started this was your first path");
+            Console.WriteLine("Now you use your serene surroundings to understand other aspects of yourself");
+            Console.WriteLine("===============================================================");
+            Console.WriteLine("||   (A) Material   (B) Political   (C) Digital   (D) Town   ||");
+            Console.WriteLine("===============================================================");
+            ForestCheck = true;
+            TownState = "Forest";
+            string inputForest = Console.ReadLine();
+            string inputF = inputForest.ToLower();
+
+            if (string.IsNullOrEmpty(inputF))
+            {
+                goto Forest;
+            }
+            char ForestChoice = inputF[0];
+            switch (ForestChoice)
+            {
+                case ('a'):
+                    Console.Clear();
+                    Console.WriteLine("You think about your material self");
+                    Console.WriteLine("You lived your whole life consuming different kinds of media to the point that it's a large part of your personality");
+                    Console.WriteLine("Being able to work towards something to buy what makes you happy or listening and appreciating your fellow people's creations");
+                    Console.WriteLine("You can't imagine ever living without being a consumer");
+                    Console.WriteLine("=====================================");
+                    Console.WriteLine("||  () Go back                     ||");
+                    Console.WriteLine("=====================================");
+                    Console.ReadKey();
+                    goto Forest;
+                case ('b'):
+                    Console.Clear();
+                    Console.WriteLine("Thinking about your political self, you weren't the most political person");
+                    Console.WriteLine("If anything you felt more averse and apathetic towards discussions towards politics. Not that you didn't care, mostly that nothing will change");
+                    Console.WriteLine("Putting your energy onto other things felt much better to you and although feeling the effects of bad governance");
+                    Console.WriteLine("You still feel pity and aversion to them for both being a scapegoat for the nations rage but not condoning their actions");
+                    Console.WriteLine("=====================================");
+                    Console.WriteLine("||  () Go back                     ||");
+                    Console.WriteLine("=====================================");
+                    Console.ReadKey();
+                    goto Forest;
+                case ('c'):
+                    Console.Clear();
+                    Console.WriteLine("Living life digitally has been a large part of your life, especially in this era where everyone is on the internet and you can interact with everyone everywhere");
+                    Console.WriteLine("Meeting a lot of friends, expressing yourself freely and finding comfort with discussing the things you love with people far away");
+                    Console.WriteLine("You also appreciate the convenience and innovations that came with technology. Being able to explore new interests or keeping in touch with loved ones");
+                    Console.WriteLine("One of the things you appreciate the most about living in present times");
+                    Console.WriteLine("=====================================");
+                    Console.WriteLine("||  () Go back                     ||");
+                    Console.WriteLine("=====================================");
+                    Console.ReadKey();
+                    goto Forest;
+                case ('d'):
+                    goto Town;
+                default:
+                    goto Forest;
+
+            }
+        Clocktower:
             Console.Clear();
             Console.WriteLine("You went inside the clocktower");
             Console.WriteLine("Everything seemed to make more sense");
